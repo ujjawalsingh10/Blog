@@ -11,6 +11,11 @@ class NewPost extends Component {
         submitted: false
     }
 
+    componentDidMount() {
+        // this.props.history.replace('/posts'); Another way to place guard 
+        console.log(this.props);
+    }
+
     postDataHandler = () => {
         const data= {
             title : this.state.title,
